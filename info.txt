@@ -1,0 +1,19 @@
+command line
+git init
+
+add files 
+git add
+
+commit/comment
+git commit -............
+
+pull
+git pull
+
+push 
+git push 
+
+root branch 
+branch 1 branch 2
+
+merge
