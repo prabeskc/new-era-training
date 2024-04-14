@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    border-width: 0;
+}
+
+label{
+    color: aquamarine;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: inline;
+    
+}
+
+input{
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    
+}
+
+form{
+background-color: blueviolet;
+}
+
+textarea{
+margin-left: 120px;
+}
+
+button{
+border: 10px;
+padding: 10px 20px;
+margin: 20px 20px;
+
+}
+button:hover{
+    
+    background: rgb(61, 214, 189);
+    transition-duration: 0.8s;
+}
