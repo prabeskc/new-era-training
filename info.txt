@@ -17,3 +17,12 @@ root branch
 branch 1 branch 2
 
 merge
+
+create an switch to new branch 
+git checkout -b <branch name>
+
+git branch
+to see the list of branch
+
+
+
