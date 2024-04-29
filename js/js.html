@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 id="js"></h1>  
+    <script>
+        document.getElementById("js").innerHTML="hello js"
+        console.log("helloworld")
+    </script>
+
+<div class="pt-5 w-full flex lg:flex-wrap xl:flex-nowrap items-center gap-2">
+    <p class="font-bold pb-1 text-2xl">Quantity:</p>
+    <div class="flex items-center gap-2 w-full">
+      <div class="flex border border-black gap-5 py-2 px-5 rounded-lg text-xl">
+        <button id="dec" class="disabled:cursor-not-allowed font-bold" onclick={decreaseProduct()}>-</button>
+        <span class="px-4" id="quantity">1</span>
+        <button onclick={increaseProduct()}>+</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+
+    let Quantity=document.getElementById("quantity").innerHTML=0;
+    function decreaseProduct(){
+        Quantity--
+        if (Quantity<=0){
+            const res =document.getElementById("dec").disabled =true;
+            window.alert("quantity cannot be less than zero")
+        }
+        else{
+            document.getElementById("quantity").innerHTML=Quantity
+        }
+        
+    }
+
+
+    function increaseProduct(){
+        Quantity++
+        const res= document.getElementById("dec").disabled=false
+        document.getElementById("quantity").innerHTML=Quantity
+    }
+</script>
+
+</body>
+</html>
